@@ -1,0 +1,34 @@
+<div class="center hero-unit">
+  <div class="row">
+    <div class="search_results">
+      <table>	
+	    <% @search.each do |artist| %>
+		  <tr>
+		    <td>
+			  <img src="<%= artist["artistImage"]  %>" 
+					alt="<%= artist["artistName"]  %>">
+			</td>
+			<td>
+			  <br>
+			  <h2>
+			  <a data-toggle="modal" href="#artist_detail_modal_<%= artist["artistId"] %>">
+					<%= artist["artistName"]  %>
+			  </a>
+			  <%= render :partial => "artist_detail_modal", :locals => { :artist_id => (@artist_id = artist["artistId"]), :artist_in_list => (@artist_in_list = artist["artistInList"]), :artist_image => (@artist_image = artist["artistImage"]), :artist_link_url => (@artist_link_url = artist["artistLinkUrl"]), :artist_name => (@artist_name = artist["artistName"]), :artist_albums => (@artist_albums = artist["artistAlbums"]) }%>
+			
+			  </h2>
+			</td>
+			<td>
+			  <% if user_signed_in? %>
+			    <%= render :partial => "list_items/add_list_item_form", :locals => { :artist_id => (@artist_id = artist["artistId"]), :artist_in_list => (@artist_in_list = artist["artistInList"]), :view_mode => (@view_mode = "inline") } %>
+			  <% else %>
+				<br>
+			    <%= button_to "Sign In", new_user_session_path ,:method => "get", class: "btn btn-large" %>
+			  <% end %>	
+			</td>
+		  </tr>
+		<% end %>
+	  </table> 
+	</div>
+  </div>
+</div>

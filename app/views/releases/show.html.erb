@@ -1,0 +1,45 @@
+<div class="center hero-unit">
+  <div class="row">
+    <div class="search_results">
+	<h2>Releases for today: <%= @today %></h2>
+
+	<%= render :partial => "notify_form" %>
+
+	  <table>
+  		<% user_id = 0 %>
+  		<% @users.each do |user| %>
+		  <% if user_id != user.id %>
+	  		<tr>
+	    	  <td colspan=3>
+		  	    <h3>Email to <%= user.user_name %> (<%= user.email %>) </h3>	
+			  </td>
+	  		</tr>
+
+	  		<% user_id = user.id %>
+		  <% end %>
+	
+	  		<tr>
+			  <td>
+		  		<img src="<%= user.album_image  %>" 
+		  	alt="<%= user.artist_name  %>">
+			  </td>
+			  <td>
+		  		<h2>
+				  <a href="<%= user.web_url %>" target="_blank">
+		  		    <%= user.album_name %>
+			        <br>
+				    <%= user.artist_name %>
+		  		  </a>
+				</h2>
+			  </td>
+			 
+			  <td>
+				<%= button_to "Buy", user.itunes_url, class: "btn btn-large btn-primary" %>		
+			  </td>
+			</tr>
+		<% end %>
+		</tr>
+	  </table>
+	</div>
+  </div>
+</div>

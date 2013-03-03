@@ -1,0 +1,2 @@
+<br>
+<%= button_to "Add", { :controller => "list_items", :action => "create", :user_id => current_user.id, :artist_id => @artist_id  }, :method => "post", :remote => true, class: "btn btn-large btn-primary" %>
