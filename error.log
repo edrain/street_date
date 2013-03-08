@@ -1,0 +1,7 @@
+/Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands/runner.rb:53:in `eval': uninitialized constant WheneverTest (NameError)
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands/runner.rb:53:in `eval'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands/runner.rb:53:in `<top (required)>'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands.rb:64:in `require'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands.rb:64:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'

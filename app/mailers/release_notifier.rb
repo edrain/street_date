@@ -4,6 +4,10 @@ class ReleaseNotifier < ActionMailer::Base
   def notify(user)
     @user = user
     mail to: user[0].email, subject: "You have new albums out today!"
+    #mail(to: user[0].email, subject: "You have new albums out today!") do |format|
+    #  format.html { render :layout => 'test_layout' }
+    #  format.text 
+    #end
   end
 
   def admin_notify(today)
