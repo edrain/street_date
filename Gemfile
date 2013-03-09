@@ -24,12 +24,15 @@ gem 'premailer-rails3'
 gem 'nokogiri'
 
 # Mail schedule stuff
-gem 'resque'
+# gem 'resque'
 # gem 'resque_mailer'
 # gem 'resque-scheduler'
 
-#search
+# search
 gem 'httparty'
+
+# deploy
+gem 'capistrano'
 
 # Gems used only for assets and not required
 # in production environments by default.
