@@ -21,9 +21,10 @@ test:
   production:
     adapter: mysql
     encoding: utf8
-    reconnect: false
+    #reconnect: false
     database: street_date_prod
-    pool: 5
+    #pool: 5
     username: sd_prod_user
     password: spu3u2rA
     host: streetdate.info
+    port: 3306
