@@ -3,8 +3,7 @@ set :user, 'edrain'
 set :domain, 'streetdate.info'
 set :project, 'street_date'
 set :application, 'streetdate.info'
-#set :applicationdir, "/home/edrain/streetdate.info/public"
-set :applicationdir, "/home/edrain/streetdate.info/public"
+set :applicationdir, "/home/edrain/streetdate.info"
 
 #set :default_environment, { 'PATH' => "'/usr/lib/ruby/gems/1.8/bin//bundle:/home/edrain/.gems/bin:/usr/lib/ruby/gems/1.8/bin/:/usr/local/bin:/usr/bin:/bin:'" }
 
@@ -34,13 +33,13 @@ set :chmod755, "app config db lib public vendor script script/* public/disp*"
 set :use_sudo, false 
   
 # Passenger
-#namespace :deploy do
-#  task :start do ; end
-#  task :stop do ; end
-#  task :restart, :roles => :app, :except => { :no_release => true } do
-#    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#  end
-#end
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+end
 
 
 #set :application, "set your application name here"
