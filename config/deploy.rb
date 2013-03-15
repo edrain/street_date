@@ -2,16 +2,16 @@ require 'bundler/capistrano'
 set :user, 'edrain'
 set :domain, 'streetdate.info'
 set :project, 'street_date'
-#set :applicationdir, "/home/edrain/streetdate.info/public"
-#set :applicationdir, "streetdate.info/public" 
 set :application, 'streetdate.info'
-set :applicationdir, "/home/edrain/street_date"
+#set :applicationdir, "/home/edrain/streetdate.info/public"
+set :applicationdir, "/home/edrain/streetdate.info/public"
+
+#set :default_environment, { 'PATH' => "'/usr/lib/ruby/gems/1.8/bin//bundle:/home/edrain/.gems/bin:/usr/lib/ruby/gems/1.8/bin/:/usr/local/bin:/usr/bin:/bin:'" }
 
 set :scm, 'git'
 set :scm_username, 'edrain'
-set :scm_password, '007Spies'
-#set :repository,  "ssh://edrain@streetdate.info/~/street_date.git"
-set :repository,  "git@github.com:edrain/street_date.git"
+set :scm_password, '007spies'
+set :repository,  "https://github.com/edrain/street_date.git"
 set :deploy_via, :remote_cache
 set :git_enable_submodules, 1 # if you have vendored rails
 set :branch, 'master'
@@ -28,15 +28,11 @@ set :deploy_to, applicationdir
 set :deploy_via, :export
  
 # additional settings
-  #default_run_options[:pty] = true  # Forgo errors when deploying from windows
-#ssh_options[:keys] = %w(/home/user/.ssh/id_rsa)            # If you are using ssh_keysset :chmod755, "app config db lib public vendor script script/* public/disp*"set :use_sudo, false
-# additional settings
 default_run_options[:pty] = true  # Forgo errors when deploying from windows
 #ssh_options[:keys] = %w(/Path/To/id_rsa)            # If you are using ssh_keys
 set :chmod755, "app config db lib public vendor script script/* public/disp*"
 set :use_sudo, false 
- 
- 
+  
 # Passenger
 namespace :deploy do
   task :start do ; end
