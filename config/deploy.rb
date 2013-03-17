@@ -11,6 +11,8 @@ set :scm_password, '007Spies'
 set :repository, "http://svn.streetdate.info/#street_date/trunk/"
 
 #set :default_environment, { 'PATH' => "'/usr/lib/ruby/gems/1.8/bin//bundle:/home/edrain/.gems/bin:/usr/lib/ruby/gems/1.8/bin/:/usr/local/bin:/usr/bin:/bin:'" }
+set :default_environment, { 'PATH' => "'/home/edrain/.gems/bin/bundle:/home/edrain/.gems/bin:/usr/lib/ruby/gems/1.8/bin/:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games'"}
+
 set :scm, 'git'
 set :scm_username, 'edrain'
 set :scm_password, '007spies'
