@@ -26,5 +26,6 @@ test:
     #pool: 5
     username: sd_prod_user
     password: spu3u2rA
+    #host: mysql.yourdomain.com
     host: streetdate.info
     port: 3306
