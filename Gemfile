@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 
+#gem 'rails', '3.0.3'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
 
 # Authentication / Authorization
 gem 'devise'
@@ -20,7 +20,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
 # Mailer layout
-gem 'premailer-rails3'
+gem 'premailer-rails'
 gem 'nokogiri'
 
 # Mail schedule stuff

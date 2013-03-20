@@ -7,7 +7,7 @@ class ReleasesController < ApplicationController
     @list_items = ListItem.select("DISTINCT artist_id") #.where("id IS NOT NULL")
     
 #adjust this, obviously
-  	@today = Date.today-9   #.to_s
+  	@today = Date.today-21   #.to_s
 
     #Get most recent release for each artist       
     @list_items.each do |list_item|

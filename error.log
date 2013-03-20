@@ -63,3 +63,27 @@
 	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392/gems/railties-3.2.12/lib/rails/commands.rb:64:in `<top (required)>'
 	from script/rails:6:in `require'
 	from script/rails:6:in `<main>'
+/Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/resolver.rb:294:in `resolve': You have requested: (Bundler::GemNotFound)
+  rails = 3.0.3
+
+The bundle currently has rails locked at 3.2.12.
+Try running `bundle update rails`
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/resolver.rb:163:in `start'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/resolver.rb:129:in `block in resolve'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/resolver.rb:128:in `catch'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/resolver.rb:128:in `resolve'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/definition.rb:179:in `resolve'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/definition.rb:114:in `specs'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/definition.rb:159:in `specs_for'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/definition.rb:148:in `requested_specs'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/environment.rb:18:in `requested_specs'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/runtime.rb:13:in `setup'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler.rb:120:in `setup'
+	from /Users/EliDrain/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.0/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /Users/EliDrain/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:60:in `require'
+	from /Users/EliDrain/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:60:in `rescue in require'
+	from /Users/EliDrain/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:35:in `require'
+	from /Users/EliDrain/Sites/rails/work/street_date/config/boot.rb:6:in `<top (required)>'
+	from /Users/EliDrain/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/EliDrain/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from script/rails:5:in `<main>'
