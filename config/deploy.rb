@@ -35,6 +35,7 @@ role :db,  domain, :primary => true
 set :deploy_to, applicationdir
 #set :deploy_via, :export
 set :deploy_via, :remote_cache 
+set :normalize_asset_timestamps, false
  
 # additional settings
 default_run_options[:pty] = true  # Forgo errors when deploying from windows
