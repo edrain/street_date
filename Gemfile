@@ -54,9 +54,9 @@ group :development do
   gem 'annotate', '2.5.0'
 end
 
-#group :production do
-#  gem 'mysql2'
-#end  
+group :production do
+  gem 'mysql'
+end  
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
