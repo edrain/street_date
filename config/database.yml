@@ -27,5 +27,5 @@ production:
   username: sd_prod_user
   password: spu3u2rA
   #host: mysql.yourdomain.com
-  host: streetdate.info
+  host: mysql.streetdate.info
   port: 3306
