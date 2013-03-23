@@ -33,8 +33,6 @@ GEM
       rake
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (2.3.1.0)
-      sass (~> 3.2)
     bootstrap-will_paginate (0.0.9)
       will_paginate
     builder (3.0.4)
@@ -101,6 +99,7 @@ GEM
     mime-types (1.21)
     multi_json (1.7.1)
     multi_xml (0.5.3)
+    mysql2 (0.3.11)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.1)
@@ -110,7 +109,6 @@ GEM
       net-ssh (>= 2.6.5)
     nokogiri (1.5.8)
     orm_adapter (0.4.0)
-    pg (0.14.1)
     polyglot (0.3.3)
     premailer (1.7.3)
       css_parser (>= 1.1.9)
@@ -193,7 +191,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.5.0)
-  bootstrap-sass
   bootstrap-will_paginate
   cancan
   capistrano
@@ -203,8 +200,8 @@ DEPENDENCIES
   jquery-rails
   less-rails
   mailcatcher
+  mysql2
   nokogiri
-  pg
   premailer-rails
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

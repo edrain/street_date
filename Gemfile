@@ -18,7 +18,7 @@ gem "less-rails"
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
 
 
 # Mailer layout
@@ -57,8 +57,8 @@ group :development do
 end
 
 group :production do
-  gem 'pg'      #, '0.12.2'
-  #gem 'mysql2'
+  #gem 'pg'      #, '0.12.2'
+  gem 'mysql2'
 end  
 
 # To use ActiveModel has_secure_password
