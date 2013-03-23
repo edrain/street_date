@@ -4,13 +4,22 @@ StreetDate::Application.routes.draw do
 
   devise_for :users
 
-  match '/help',                to: 'static_pages#help'
-  match '/about',               to: 'static_pages#about'
-  match '/contact',             to: 'static_pages#contact'
-  match '/list_items',          to: 'list_items#show'
-  match '/releases',            to: 'releases#show'
-  match '/releases/notify',     to: 'releases#notify'
-  match '/delete',              to: 'list_items#destroy'
+  #match '/help',                to: 'static_pages#help'
+  #match '/about',               to: 'static_pages#about'
+  #match '/contact',             to: 'static_pages#contact'
+  #match '/list_items',          to: 'list_items#show'
+  #match '/releases',            to: 'releases#show'
+  #match '/releases/notify',     to: 'releases#notify'
+  #match '/delete',              to: 'list_items#destroy'
+
+  match '/help'                => 'static_pages#help'
+  match '/about'               => 'static_pages#about'
+  match '/contact'             => 'static_pages#contact'
+  match '/list_items'          => 'list_items#show'
+  match '/releases'            => 'releases#show'
+  match '/releases/notify'     => 'releases#notify'
+  match '/delete'              => 'list_items#destroy'
+
   
   root to: 'static_pages#home'
   
