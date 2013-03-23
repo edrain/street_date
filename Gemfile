@@ -55,8 +55,8 @@ group :development do
 end
 
 group :production do
-  gem 'mysql2'
-  #gem 'activerecord-mysql-adapter'
+  gem 'pg'      #, '0.12.2'
+  #gem 'mysql2'
 end  
 
 # To use ActiveModel has_secure_password
