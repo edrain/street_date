@@ -18,6 +18,8 @@ gem "less-rails"
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'bootstrap-sass'
+
 
 # Mailer layout
 gem 'premailer-rails'
