@@ -58,5 +58,10 @@ module StreetDate
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Custom directories with classes and modules you want to be autoloadable.
+    # config.autoload_paths += %W(#{config.root}/extras)
+    config.autoload_paths += %W(#{config.root}/lib)
+    
   end
 end
