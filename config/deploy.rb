@@ -58,5 +58,3 @@ namespace :deploy do
    end
 end
   
-end
-
