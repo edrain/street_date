@@ -1,5 +1,6 @@
 class ListItemsController < ApplicationController
-  before_filter :authenticate_user!, only: [:create, :destroy]
+  #before_filter :authenticate_user!, only: [:create, :destroy]
+  before_filter :authenticate_user!, :only => [:create, :destroy]
 
   def show
     @list_owner = User.find(params[:id])
