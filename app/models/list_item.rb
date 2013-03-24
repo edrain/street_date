@@ -15,8 +15,8 @@ class ListItem < ActiveRecord::Base
   
   belongs_to :user
   
-  validates :user_id, presence: true
-  validates :artist_id, presence: true
+#  validates :user_id, presence: true
+#  validates :artist_id, presence: true
 
   def add_artist_image(image)
     self.artist_image = image
