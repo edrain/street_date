@@ -45,9 +45,18 @@ set :use_sudo, false
   
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
+   namespace :assets do
+     task :precompile, :roles => :web, :except => { :no_release => true } do
+       run "cd #{current_path} && #{rake} RAILS_ENV=#{rails_env} RAILS_GROUPS=assets assets:precompile --trace"
+     end
+   end
+  
    task :start do ; end
    task :stop do ; end
    task :restart, :roles => :app, :except => { :no_release => true } do
      run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
 end
+  
+end
+
