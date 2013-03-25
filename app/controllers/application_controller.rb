@@ -30,7 +30,8 @@ class ApplicationController < ActionController::Base
         if results = get("/wsLookup", :query => query)["results"]
           results.delete_at(0)
           
-          results.sort_by! { |a| a["releaseDate"] }
+          #results.sort_by! { |a| a["releaseDate"] }
+          results.sort_by { |a| a["releaseDate"] }
           
           #If no elements of results has an "artworkUrl100" value it might throw an error.
           @image = nil
@@ -47,7 +48,8 @@ class ApplicationController < ActionController::Base
       def lookup_artist_albums(query={})
         if results = get("/wsLookup", :query => query)["results"]
           results.delete_at(0)
-          results.sort_by! { |a| a["releaseDate"]}.reverse!
+          #results.sort_by! { |a| a["releaseDate"]}.reverse!
+          results.sort_by { |a| a["releaseDate"]}.reverse!
           
           @albums = results
           
@@ -60,7 +62,8 @@ class ApplicationController < ActionController::Base
         if results = get("/wsLookup", :query => query)["results"]
           results.delete_at(0)
           
-          results.sort_by! { |a| a["releaseDate"] }
+          #results.sort_by! { |a| a["releaseDate"] }
+          results.sort_by { |a| a["releaseDate"] }
           
           #If no elements of results has an "artworkUrl100" value it might throw an error.
           #@image = nil
