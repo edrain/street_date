@@ -12,12 +12,10 @@ gem 'devise'
 gem 'cancan'
 
 # Layout stuff
-# All 5 of these need to be uncommented
-gem "less-rails"
+# All 3 of these need to be uncommented
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-#gem 'bootstrap-sass'
 
 
 # Mailer layout
@@ -39,7 +37,8 @@ gem 'capistrano'
 # in production environments by default.
 group :assets do
   gem "therubyracer"
-  gem 'sass-rails',   '~> 3.2.3'
+  gem "less-rails"
+  #gem 'bootstrap-sass'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -51,6 +50,7 @@ end
 gem 'jquery-rails'
 
 group :development do
+  gem 'sass-rails',   '~> 3.2.3'
   gem 'sqlite3'
   gem 'mailcatcher'
   gem 'annotate', '2.5.0'
