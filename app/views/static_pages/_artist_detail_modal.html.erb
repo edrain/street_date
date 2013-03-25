@@ -20,7 +20,7 @@
 		    <%= render :partial => "list_items/add_list_item_form", :locals => { :artist_id => @artist_id, :artist_in_list => @artist_in_list, :view_mode => (@view_mode = "modal") } %>
 		  <% else %>
 			<br>
-		    <%= button_to "Sign In", new_user_session_path ,:method => "get", class: "btn btn-large" %>
+		    <%= button_to "Sign In", new_user_session_path ,:method => "get", :class => "btn btn-large" %>
 		  <% end %>	
 		</td>
 	</table>
