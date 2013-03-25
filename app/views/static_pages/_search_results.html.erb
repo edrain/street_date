@@ -23,7 +23,7 @@
 			    <%= render :partial => "list_items/add_list_item_form", :locals => { :artist_id => (@artist_id = artist["artistId"]), :artist_in_list => (@artist_in_list = artist["artistInList"]), :view_mode => (@view_mode = "inline") } %>
 			  <% else %>
 				<br>
-			    <%= button_to "Sign In", new_user_session_path ,:method => "get", class: "btn btn-large" %>
+			    <%= button_to "Sign In", new_user_session_path ,:method => "get", :class => "btn btn-large" %>
 			  <% end %>	
 			</td>
 		  </tr>
