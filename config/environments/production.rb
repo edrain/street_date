@@ -75,7 +75,7 @@ StreetDate::Application.configure do
     :port => 587,
     :domain => 'streetdate.info',
     :authentication => :login,
-    :user_name => 'eli@streetdate.info',
+    :user_name => 'edrain@streetdate.info',
     :password => '007Spies'
     }
   config.action_mailer.raise_delivery_errors = true
