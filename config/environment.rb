@@ -7,8 +7,6 @@ require File.expand_path('../application', __FILE__)
 #end
 
 #require File.join(File.dirname(__FILE__), 'boot')
-
-# configure action_mailer
   
 # Initialize the rails application
 StreetDate::Application.initialize!
