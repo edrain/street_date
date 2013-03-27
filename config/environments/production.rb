@@ -23,6 +23,7 @@ StreetDate::Application.configure do
   config.assets.digest = true
   
     # configure action_mailer
+  config.action_mailer.default_url_options = { :host => 'streetdate.info' }
     
 
 
