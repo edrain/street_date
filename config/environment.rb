@@ -9,7 +9,8 @@ require File.expand_path('../application', __FILE__)
 #require File.join(File.dirname(__FILE__), 'boot')
 
 # configure action_mailer
-
+config.action_mailer.default_url_options = { :host => 'streetdate.info' }
+  
 # Initialize the rails application
 StreetDate::Application.initialize!
 

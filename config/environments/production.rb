@@ -23,6 +23,10 @@ StreetDate::Application.configure do
   config.assets.digest = true
   
     # configure action_mailer
+    
+
+
+    
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address => 'mail.streetdate.info',
