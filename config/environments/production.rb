@@ -72,7 +72,7 @@ StreetDate::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address => "mail.streetdate.info", 
-    :port => 587
+    :port => 587,
     :domain => 'streetdate.info',
     :authentication => :login,
     :user_name => 'eli@streetdate.info',
