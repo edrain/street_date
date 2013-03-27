@@ -16,6 +16,8 @@ gem 'cancan'
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem "therubyracer"
+gem "less-rails"
 
 
 # Mailer layout
@@ -36,8 +38,6 @@ gem 'capistrano'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem "therubyracer"
-  gem "less-rails"
   #gem 'bootstrap-sass'
   gem 'coffee-rails', '~> 3.2.1'
 
