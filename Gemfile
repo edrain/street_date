@@ -20,6 +20,9 @@ gem "therubyracer"
 gem "less-rails"
 
 
+# heroku
+gem 'thin'
+
 # Mailer layout
 gem 'premailer-rails'
 gem 'nokogiri'
