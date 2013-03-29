@@ -21,7 +21,7 @@ gem "less-rails"
 
 
 # heroku
-gem 'thin'
+#gem 'thin'
 
 # Mailer layout
 gem 'premailer-rails'
@@ -60,9 +60,8 @@ group :development do
 end
 
 group :production do
-  #gem 'pg'      #, '0.12.2'
   gem 'mysql2'
-  gem 'activerecord-postgresql-adapter'
+  #gem 'activerecord-postgresql-adapter'
   
 end  
 
