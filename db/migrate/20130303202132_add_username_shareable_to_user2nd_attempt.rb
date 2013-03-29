@@ -3,7 +3,8 @@ class AddUsernameShareableToUser2ndAttempt < ActiveRecord::Migration
     remove_column :users, :user_name
     remove_column :users, :shareable
     add_column :users, :user_name, :string
-    add_column :users, :shareable, :boolean, :null => false, :default => 0
+    #add_column :users, :shareable, :boolean, :null => false, :default => 0
+    add_column :users, :shareable, :boolean, :null => false, :default => false
     change_column :users, :user_name, :string, :null => false
   end
 end
