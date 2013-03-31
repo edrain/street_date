@@ -76,7 +76,9 @@ StreetDate::Application.configure do
     :domain => 'streetdate.info',
     :authentication => :login,
     :user_name => 'edrain@streetdate.info',
-    :password => '007Spies'
+    :password => '007Spies',
+    :enable_starttls_auto => true,
+    :openssl_verify_mode  => 'none'
     }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
