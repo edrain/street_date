@@ -75,7 +75,7 @@ StreetDate::Application.configure do
     :port => 587,
     :domain => 'streetdate.info',
     :authentication => :login,
-    :user_name => 'edrain@streetdate.info',
+    :user_name => 'eli@streetdate.info',
     :password => '007Spies',
     :enable_starttls_auto => true,
     :openssl_verify_mode  => 'none'
