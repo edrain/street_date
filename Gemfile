@@ -19,13 +19,12 @@ gem 'bootstrap-will_paginate'
 gem "therubyracer"
 gem "less-rails"
 
-
 # heroku
 #gem 'thin'
 
 # Mailer layout
-gem 'premailer-rails'
-gem 'nokogiri'
+#gem 'premailer-rails'
+#gem 'nokogiri'
 
 # Mail schedule stuff
 # gem 'resque'

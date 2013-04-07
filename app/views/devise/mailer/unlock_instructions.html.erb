@@ -2,30 +2,31 @@
 <html>
   <head>
     <title>Street Date</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+
 	<%= render 'layouts/shim' %>
   </head>
-  <body>
-
-
+  <body style="border:0px;margin:0px;padding:0px;">
     <%= render 'layouts/email_header' %>
-	<div class="container">
-      <div class="center hero-unit">
-        <div class="row">
+	<br>
 
-		  <p>Hello <%= @resource.email %>!</p>
+	<table style="width:80%;align:center;border:0px;margin-left:10%;margin-right:10%;">
+      <tr>
+		<td style="text-align:center;padding:60px;margin-bottom:30px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eeeeee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius: 6px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;">
+
+		  <p>Hello, <%= @resource.user_name %>!</p>
 
 		  <p>Your account has been locked due to an excessive amount of unsuccessful sign in attempts.</p>
 
 		  <p>Click the link below to unlock your account:</p>
 
-		  <p><%= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token) %></p>
+		  <p><%= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token), :style => "color:#0088cc;text-decoration:none;" %></p>
 
-	    </div>
-      </div>
+		</td>
+	  </tr>
+    </table>
 
-      <%= render 'layouts/email_footer' %>
-    </div>
-  </body>
+  <%= render 'layouts/email_footer' %>
+  
+</body>
 </html>
 

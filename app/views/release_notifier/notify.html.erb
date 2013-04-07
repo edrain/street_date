@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+	
     <title>Street Date</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    
 	<%= render 'layouts/shim' %>
   </head>
-  <body>
+  <body style="border:0px;margin:0px;padding:0px;">
 	
     <%= render 'layouts/email_header' %>
     
-  	  <div class="center hero-unit">
-        <div class="row" align="center">
-		  <table>
-		    <tr>
-			  <td colspan=3>	
-		 	    
-		  		
+    <br>
+  	  
+    <table style="width:80%;align:center;border:0px;margin-left:10%;margin-right:10%;">
+	  <tr>
+		<td style="text-align:center;padding:60px;margin-bottom:30px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eeeeee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius: 6px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;">	
+ 		  <table align=center>	
 			<% @user.each do |user| %>
 			  <tr>
 			    <td>
@@ -24,7 +24,7 @@
 				</td>
 				<td>
 				  <h2>
-				    <a href="<%= user.web_url %>" target="_blank">
+				    <a href="<%= user.web_url %>" target="_blank" style="color:#0088cc;text-decoration:none;">
 				      <%= user.album_name %>
 					  <br>
 					  <%= user.artist_name %>
@@ -33,14 +33,53 @@
 				</td>
 				<td>
 				  <form method="link" action="<%= user.itunes_url %>">
-					<input type="submit" value="Buy" class="btn btn-large btn-primary">
+					<input type="submit" value="Buy" 
+					style="display: inline-block;
+					  *display: inline;
+					  padding: 4px 12px;
+					  margin-bottom: 0;
+					  *margin-left: .3em;
+					  font-size: 14px;
+					  line-height: 20px;
+					  color: #ffffff;
+					  text-align: center;
+					  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					  vertical-align: middle;
+					  cursor: pointer;
+					  background-color: #006dcc;
+					  *background-color: #0044cc;
+					  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+					  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+					  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+					  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+					  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+					  background-repeat: repeat-x;
+					  border: 1px solid #cccccc;
+					  *border: 0;
+					  border-color: #0044cc #0044cc #002a80;
+					  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+					  border-bottom-color: #b3b3b3;
+					  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+					  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+					  *zoom: 1;
+					  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+					     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+					          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+							padding: 11px 19px;
+							font-size: 17.5px;
+							font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+							-webkit-border-radius: 6px;
+							-moz-border-radius: 6px;
+							border-radius: 6px;
+					">
 				  </form>	
 				</td>
 			  </tr>
 			<% end %>
 		  </table>
-        </div>
-      </div>
+		</td>
+	  </tr>
+    </table>
 
       <%= render 'layouts/email_footer' %>
   </body>

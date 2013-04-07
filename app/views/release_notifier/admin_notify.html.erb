@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Street Date</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
 
     <%= render 'layouts/shim' %>
   </head>
-  <body>
-	
-    <%= render 'layouts/email_header' %>
-    
-  	  <div class="center hero-unit">
-        <div class="row" align="center">
-		  <table>
-		    <tr>
-			  <td colspan=3>	
-		 	    <h2>
-				  Releases for <%= @today %> sent.
-				</h2>
-		  </table>
-        </div>
-      </div>
+  <body style="border:0px;margin:0px;padding:0px;">
+	<%= render 'layouts/email_header' %>
+    <br>
+	<table style="width:80%;align:center;border:0px;margin-left:10%;margin-right:10%;">
+	  <tr>
+		<td style="text-align:center;padding:60px;margin-bottom:30px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eeeeee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius: 6px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;">
+	   	  <h2>
+	        Releases for <%= @today %> sent.
+	   	  </h2>
+    	</td>
+	  </tr>
+	</table>
 
-      <%= render 'layouts/email_footer' %>
+	<%= render 'layouts/email_footer' %>
+  	
+	</table>
   </body>
 </html>
