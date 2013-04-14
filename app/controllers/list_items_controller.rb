@@ -32,7 +32,7 @@ class ListItemsController < ApplicationController
         artist.add_artist_image(@image)
         artist.add_artist_name(@artist_info["artistName"]) 
         artist.add_artist_url(@artist_info["artistLinkUrl"])                
-        artist.add_artist_albums(@albums)                
+        artist.add_artist_albums(@albums)  
       end  
     else
       @display_list = false

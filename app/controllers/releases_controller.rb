@@ -6,7 +6,7 @@ class ReleasesController < ApplicationController
     #Get all artists from DB
     @list_items = ListItem.select("DISTINCT artist_id") #.where("id IS NOT NULL")
     
-  	@today = Date.today #-6   #.to_s
+  	@today = Date.today-6  #.to_s
 
     #Get most recent release for each artist       
     @list_items.each do |list_item|
@@ -24,7 +24,7 @@ class ReleasesController < ApplicationController
     	list_item["album_name"] = result["collectionName"]
     	list_item["album_image"] = result["artworkUrl100"]
     	list_item["web_url"] = result["collectionViewUrl"]
-      list_item["itunes_url"] = result["collectionViewUrl"].sub('https','itms')
+      #list_item["itunes_url"] = result["collectionViewUrl"].sub('https','itms')
     end
 
     #Add new releases to artists array if they have releases today
@@ -56,7 +56,7 @@ class ReleasesController < ApplicationController
           user["album_name"] = release.album_name
           user["album_image"] = release.album_image
         	user["web_url"] = release.web_url
-        	user["itunes_url"] = release.itunes_url
+        	#user["itunes_url"] = release.itunes_url
         	user["today"] = @today
         	
         	#user["release_date"] = release.release_date
