@@ -59,7 +59,7 @@ class ReleasesController < ApplicationController
         	user["itunes_url"] = release.itunes_url
         	user["today"] = @today
         	
-        	user["release_date"] = release.release_date
+        	#user["release_date"] = release.release_date
         end
       end
     end  
