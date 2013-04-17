@@ -13,9 +13,8 @@ class ReleasesController < ApplicationController
     	result = ITunesSearch.lookup_artist_most_recent(
     	      :id => list_item.artist_id, 
     	      :entity => "album", 
-    	      :limit => "1"
-    	      #, 
-    	      #:sort => "recent"
+    	      :limit => "1",
+    	      :sort => "recent"
     	      ) 
           	
     	list_item["release_date"] = result["releaseDate"].to_date
