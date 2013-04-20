@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
     <title>Street Date</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-	<meta property="og:image" content='<%= image_tag('StreetDate.png') %>' /> 	
+	<meta property='og:title' content='Get notified when artists you care about release new material.'/>
+	<meta property='og:url' content='http://StreetDate.info'/>
+	<meta property="og:image" content='<%= request.host + image_path('StreetDate.png') %>' /> 	
 	<%= render 'layouts/shim' %>
   </head>
   <body>
