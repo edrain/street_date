@@ -7,10 +7,11 @@
 	<meta property='og:title' content='Get notified when artists you care about release new material.'/>
 	<meta property='og:url' content='http://StreetDate.info'/>
 	<meta property="og:image" content='http://<%= request.host + image_path('StreetDate.png') %>' /> 
-	<link rel="image_src" href='http://<%= request.host + image_path('StreetDate.png') %>' /> 	
+	<link rel="image_src" href='http://<%= request.host + image_path('StreetDate.png') %>' /> 
 	<%= render 'layouts/shim' %>
   </head>
   <body>
+	<img src="http://<%= request.host + image_path('StreetDate.png') %>">	
 	<%= render 'layouts/header' %>	
     <div class="container">
 	  <% flash.each do |key, value| %>
