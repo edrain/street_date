@@ -19,7 +19,7 @@ class ListItemsController < ApplicationController
       @list_editable = false  
     end
     
-    if @list_shareable == true or @list_editable == true or current_user.is_admin = true
+    if @list_shareable == true or @list_editable == true or current_user.is_admin == true
       @display_list = true
       #@list_items = ListItem.where(params[:user_id]).paginate(:page => params[:page], :per_page => 10).order('created_at DESC')
       #Post.where(:published => true).paginate(:page => params[:page]).order('id DESC')
