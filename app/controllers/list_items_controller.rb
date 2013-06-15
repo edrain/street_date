@@ -3,6 +3,7 @@ class ListItemsController < ApplicationController
   before_filter :authenticate_user!, :only => [:create, :destroy]
 
   def show
+    #test
     @list_owner = User.find(params[:id])
     
     @list_shareable = @list_owner.shareable
