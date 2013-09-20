@@ -11,7 +11,7 @@
 		  </h2>
 		</td>
 		<td>
-		  <a href="<%= Base_iTunes_URL + @artist_link_url %>" target="_blank">
+		  <a href="<%= @artist_link_url + Base_iTunes_Affiliate_Tag %>" target="_blank">
 					<%= @artist_name  %>
 		  </a>
 		</td>	
@@ -35,12 +35,12 @@
 					alt="<%= album["collectionName"]  %>">
 			</td>
 			<td>
-			  <a href="<%= Base_iTunes_URL + album["collectionViewUrl"] %>" target="_blank">
+			  <a href="<%= album["collectionViewUrl"] + Base_iTunes_Affiliate_Tag %>" target="_blank">
 		        <%= album["collectionName"] %>
 			  </a>
 			</td>
 			<td>
-			  <a href="<%= Base_iTunes_URL + album["collectionViewUrl"] %>" class="btn btn-large btn-primary" target="_blank">Buy</a>
+			  <a href="<%= album["collectionViewUrl"] + Base_iTunes_Affiliate_Tag %>" class="btn btn-large btn-primary" target="_blank">Buy</a>
 			</td>			
 	  <% end %>	
 	</table>
